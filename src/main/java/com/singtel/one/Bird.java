@@ -1,12 +1,20 @@
 package com.singtel.one;
 
-public class Bird extends Animal {
+import com.singtel.d.FlyBehaviour;
+import com.singtel.d.SingBehaviour;
 
-    void fly() {
+public class Bird extends Animal implements FlyBehaviour, WalkBehaviour, SingBehaviour {
+
+   public void fly() {
         System.out.println("I am flying");
     }
 
-    void sing() {
+    public void sing() {
         System.out.println("I am singing");
+    }
+
+    @Override
+    public void walk() {
+        System.out.println("I am walking");
     }
 }
