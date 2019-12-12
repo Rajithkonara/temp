@@ -8,6 +8,7 @@ import com.singtel.d.Catterpillar;
 import com.singtel.d.Metamorphosis;
 import com.singtel.four.AnimalSounds;
 import com.singtel.four.Parrot;
+import com.singtel.two.Rooster;
 
 public class Solution {
 
@@ -42,6 +43,12 @@ public class Solution {
         Butterfly newB = new Metamorphosis().transform(catterpillar);
         System.out.println("transformed butterfly");
         newB.fly();
+
+
+        Rooster rooster = new Rooster();
+        rooster.makeSound();
+        rooster.makeNativeSound("Sinhalssa");
+        rooster.makeNativeSound("Dutch");
     }
 
 }
