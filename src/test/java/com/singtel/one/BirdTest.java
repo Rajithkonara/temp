@@ -31,7 +31,13 @@ public class BirdTest {
 
         new Bird().sing();
         assertEquals(outContent.toString(), "I am singing\n");
-
     }
+
+    @Test
+    void swim() {
+        new Duck().swim();
+        assertEquals(outContent.toString(), "I can swim\n");
+    }
+
 
 }

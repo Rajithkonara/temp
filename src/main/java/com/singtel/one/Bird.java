@@ -2,7 +2,10 @@ package com.singtel.one;
 
 import com.singtel.d.FlyBehaviour;
 import com.singtel.d.SingBehaviour;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter @Setter
 public class Bird extends Animal implements FlyBehaviour, WalkBehaviour, SingBehaviour {
 
    public void fly() {
